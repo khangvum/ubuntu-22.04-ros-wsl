@@ -34,15 +34,15 @@ File            |Description
 
 1.  **Clone the repository:**
 
-```bash
-git clone https://github.com/khangvum/ubuntu-22.04-ros-wsl.git ~/.dotfiles
-```
+    ```bash
+    git clone https://github.com/khangvum/ubuntu-22.04-ros-wsl.git ~/.dotfiles
+    ```
 
 2.  **Apply the settings:**
 
-```bash
-bash ~/.dotfiles/installation.sh
-```
+    ```bash
+    bash ~/.dotfiles/installation.sh
+    ```
 
 ## Collaboration
 
