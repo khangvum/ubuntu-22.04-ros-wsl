@@ -27,7 +27,7 @@ File            |Description
 :--------------:|:----------
 `aliases.sh`    | Contains useful **_shell aliases_**
 `packages.sh`   | Installs required **_packages_** and **_dependencies_**
-`ros.sh`        | Configures the **_ROS environment_**
+`ros.sh`        | Configures the **_[ROS environment](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)_**
 `wsl.sh`        | Sets up **_WSL-specific_** configurations
 
 ## Applying Configuration
