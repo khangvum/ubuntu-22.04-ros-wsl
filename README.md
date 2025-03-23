@@ -6,6 +6,7 @@ A **_Robot Operating System_** (**_ROS_**) **_environment_** tailored for runnin
 
 -   Seamless **_Windows interoperability_**, minimizing the overhead of a traditional virtual machine.
 -   **_Cross-filesystem_** access between Linux and Windows.
+-   Supports ROS **_virtualization tools_** such as **_Rviz_** and **_Gazebo_**.
 
 ## Filesystem Hierarchy
 
@@ -18,6 +19,29 @@ A **_Robot Operating System_** (**_ROS_**) **_environment_** tailored for runnin
             ├── packages.sh
             ├── wsl.sh
             └── installation.sh
+```
+
+`installation.sh` automates the **_dependency installation_** and **_environment set up_** process, including:
+
+File            |Description
+:--------------:|:----------
+`aliases.sh`    | Contains useful **_shell aliases_**
+`packages.sh`   | Installs required **_packages_** and **_dependencies_**
+`ros.sh`        | Configures the **_ROS environment_**
+`wsl.sh`        | Sets up **_WSL-specific_** configurations
+
+## Applying Configuration
+
+1.  **Clone the repository:**
+
+```bash
+git clone https://github.com/khangvum/ubuntu-22.04-ros-wsl.git ~/.dotfiles
+```
+
+2.  **Apply the settings:**
+
+```bash
+bash ~/.dotfiles/installation.sh
 ```
 
 ## Collaboration
