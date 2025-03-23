@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Configure WSL global settings
 sudo tee /etc/wsl.conf > /dev/null << 'EOF'
 [boot]
