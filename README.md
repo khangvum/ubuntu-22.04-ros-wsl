@@ -25,10 +25,10 @@ A **_Robot Operating System_** (**_ROS_**) **_environment_** tailored for runnin
 
 File            |Description
 :--------------:|:----------
-`aliases.sh`    | Contains useful **_shell aliases_**
-`packages.sh`   | Installs required **_packages_** and **_dependencies_**
-`ros.sh`        | Configures the **_[ROS environment](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)_**
-`wsl.sh`        | Sets up **_WSL-specific_** configurations
+`aliases.sh`    |Shell **_aliases_**
+`packages.sh`   |**_Packages_** and **_dependencies_** installation
+`ros.sh`        |**_[ROS environment](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)_** configuration
+`wsl.sh`        |**_WSL-specific_** settings
 
 ## Applying Configuration
 
