@@ -6,7 +6,8 @@ A **_Robot Operating System_** (**_ROS_**) **_environment_** tailored for runnin
 
 -   Seamless **_Windows interoperability_**, minimizing the overhead of a traditional virtual machine.
 -   **_Cross-filesystem_** access between Linux and Windows.
--   Supports ROS **_virtualization tools_** such as **_Rviz_** and **_Gazebo_**.
+-   Supports ROS **_virtualization_** tools such as **_Rviz_** and **_Gazebo Fortress_**.
+-   Improved **_GPU acceleration_**, offering streamlined rendering.
 
 ## Filesystem Hierarchy
 
@@ -14,11 +15,11 @@ A **_Robot Operating System_** (**_ROS_**) **_environment_** tailored for runnin
 └── home
     └── khangvum
         └── .dotfiles
+            ├── installation.sh
             ├── aliases.sh
             ├── ros.sh
             ├── packages.sh
-            ├── wsl.sh
-            └── installation.sh
+            └── wsl.sh
 ```
 
 `installation.sh` automates the **_dependency installation_** and **_environment set up_** process, including:
@@ -28,7 +29,7 @@ File            |Description
 `aliases.sh`    |Shell **_aliases_**
 `packages.sh`   |**_Packages_** and **_dependencies_** installation
 `ros.sh`        |**_[ROS environment](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)_** configuration
-`wsl.sh`        |**_WSL-specific_** settings
+`wsl.sh`        |**_WSL-specific_** settings, configured in `/etc/wsl.conf`
 
 ## Applying Configuration
 
