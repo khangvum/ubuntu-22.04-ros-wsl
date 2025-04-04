@@ -1,17 +1,20 @@
 #!/bin/bash
 
+# Define the working directory path
+DOTFILES_PATH="/etc/ubuntu/.dotfiles"
+
 # Install the required updates
 sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt clean -y && sudo apt autoclean -y
 
 # Run the configuration scripts
 # - Add aliases
-bash ~/.dotfiles/aliases.sh
+bash $DOTFILES_PATH/aliases.sh
 # - Install the packages and dependencies
-bash ~/.dotfiles/packages.sh
+bash $DOTFILES_PATH/packages.sh
 # - Install ROS 2
-bash ~/.dotfiles/ros.sh
+bash $DOTFILES_PATH/ros.sh
 # - Configure WSL settings
-bash ~/.dotfiles/wsl.sh
+bash $DOTFILES_PATH/wsl.sh
 
 # Power off the distro
-# sudo poweroff
+sudo shutdown -h now
