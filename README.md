@@ -12,8 +12,8 @@ A **_Robot Operating System_** (**_ROS_**) **_environment_** tailored for runnin
 ## Filesystem Hierarchy
 
 ```
-└── home
-    └── khangvum
+└── etc
+    └── ubuntu
         └── .dotfiles
             ├── installation.sh
             ├── aliases.sh
@@ -42,7 +42,7 @@ File            |Description
 2.  **Apply the settings:**
 
     ```bash
-    bash ~/.dotfiles/installation.sh
+    bash /etc/ubuntu/.dotfiles/installation.sh
     ```
 
 ## Collaboration
