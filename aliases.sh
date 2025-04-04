@@ -13,7 +13,7 @@ fi
 cat << 'EOF' > ~/.bash_aliases
 # Aliases
 # - ~/.dotfiles
-alias .dotfiles='cd ~/.dotfiles'
+alias .dotfiles='cd /etc/ubuntu/.dotfiles'
 
 # - cd
 alias ..='cd ..'
