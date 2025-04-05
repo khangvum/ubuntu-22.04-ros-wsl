@@ -2,9 +2,9 @@
 
 # Check if ROS 2 is already installed
 if dpkg -l | grep -q ros-humble; then
-    echo "ROS 2 is already installed."
+    echo -e "\e[32mROS 2 is already installed\e[0m"
 else
-    echo "ROS 2 is not installed. Installing..."
+    echo -e "\e[33mInstalling ROS 2\e[0m"
 
     # 1. Set locale
     sudo apt update && sudo apt install locales
