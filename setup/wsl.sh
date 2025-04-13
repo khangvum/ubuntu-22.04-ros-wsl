@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Configure WSL global settings
-sudo tee /etc/wsl.conf > /dev/null << 'EOF'
+sudo tee /etc/wsl.conf > /dev/null << EOF
 [boot]
 systemd=true
 
@@ -19,5 +19,5 @@ generateResolvConf=true
 hostname=ubuntu
 
 [user]
-default=khangvum
+default=$(whoami)
 EOF
