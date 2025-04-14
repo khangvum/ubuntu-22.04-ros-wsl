@@ -32,14 +32,3 @@ else
     # 4. Environment setup: Sourcing the setup script
     source /opt/ros/humble/setup.bash
 fi
-
-# ############################################################
-# # UNCOMMENT THE FOLLOWING LINES IF YOU WANT TO INSTALL ROS 2
-# ############################################################
-# # Uninstall ROS 2
-# # - Removed the binaries
-# sudo apt remove ~nros-humble-* -y && sudo apt autoremove -y
-
-# # - Removed the repository
-# sudo rm -y /etc/apt/sources.list.d/ros2.list
-# sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt clean -y && sudo apt autoclean -y
