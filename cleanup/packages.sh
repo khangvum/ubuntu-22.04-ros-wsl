@@ -20,10 +20,10 @@ uninstall_package "OpenSSH Server" "sudo apt remove --purge openssh-server -y" "
 uninstall_package "Net Tools" "sudo apt remove --purge net-tools -y" "command -v netstat &> /dev/null"
 
 # 3. Neovim
-uninstall_package "Neovim" "sudo snap remove nvim" "command -v nvim &> /dev/null"
+uninstall_package "Neovim" "sudo snap remove nvim" "snap list | grep -q nvim"
 
 # 4. PowerShell
-uninstall_package "PowerShell" "sudo snap remove powershell" "command -v powershell &> /dev/null"
+uninstall_package "PowerShell" "sudo snap remove powershell" "snap list | grep -q powershell"
 
 # 5. Docker
-uninstall_package "Docker" "sudo snap remove docker && sudo groupdel docker" "command -v docker &> /dev/null"
+uninstall_package "Docker" "sudo snap remove docker && sudo groupdel docker" "snap list | grep -q docker"

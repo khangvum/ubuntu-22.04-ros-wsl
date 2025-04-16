@@ -20,13 +20,13 @@ install_package "OpenSSH Server" "sudo apt install openssh-server -y" "command -
 install_package "Net Tools" "sudo apt install net-tools -y" "command -v netstat &> /dev/null"
 
 # 3. Neovim
-install_package "Neovim" "sudo snap install nvim --classic" "command -v nvim &> /dev/null"
+install_package "Neovim" "sudo snap install nvim --classic" "snap list | grep -q nvim"
 
 # 4. PowerShell
-install_package "PowerShell" "sudo snap install powershell --classic" "command -v powershell &> /dev/null"
+install_package "PowerShell" "sudo snap install powershell --classic" "snap list | grep -q powershell"
 
 # 5. Docker
-if command -v docker &> /dev/null; then
+if snap list | grep -q docker; then
     echo -e "\e[32mDocker is already installed\e[0m"
 else
     echo -e "\e[33mInstalling Docker\e[0m"
