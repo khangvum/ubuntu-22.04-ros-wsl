@@ -16,7 +16,7 @@ enabled=true
 [network]
 generateHosts=true
 generateResolvConf=true
-hostname=ubuntu
+hostname=ubuntu-2204
 
 [user]
 default=$(whoami)
