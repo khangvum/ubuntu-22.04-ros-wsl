@@ -4,11 +4,11 @@
 CLEANUP_PATH="/etc/ubuntu/.dotfiles/cleanup"
 
 # Run the cleanup scripts
-# - Install the packages and dependencies
+# - Uninstall the packages and dependencies
 bash $CLEANUP_PATH/packages.sh
-# - Install ROS 2
+# - Uninstall ROS 2
 bash $CLEANUP_PATH/ros.sh
-# - Configure WSL settings
+# - Remove default user profile from WSL settings
 bash $CLEANUP_PATH/wsl.sh
 
 # Clean up the system
