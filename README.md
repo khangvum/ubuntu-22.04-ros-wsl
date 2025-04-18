@@ -15,14 +15,22 @@ A **_Robot Operating System_** (**_ROS_**) **_environment_** tailored for runnin
 └── etc
     └── ubuntu
         └── .dotfiles
-            ├── installation.sh
-            ├── aliases.sh
-            ├── ros.sh
-            ├── packages.sh
-            └── wsl.sh
+            ├── cleanup
+            │   ├── ros.sh
+            │   ├── packages.sh
+            │   └── wsl.sh
+            ├── setup
+            │   ├── aliases.sh
+            │   ├── ros.sh
+            │   ├── packages.sh
+            │   └── wsl.sh
+            ├── cleanup.sh
+            └── setup.sh
 ```
 
-`installation.sh` automates the **_dependency installation_** and **_environment set up_** process, including:
+### setup
+
+`setup.sh` automates the **_dependency installation_** and **_environment set up_** process, including:
 
 File            |Description
 :--------------:|:----------
@@ -31,7 +39,19 @@ File            |Description
 `ros.sh`        |**_[ROS environment](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)_** configuration
 `wsl.sh`        |**_WSL-specific_** settings, configured in `/etc/wsl.conf`
 
+### cleanup
+
+`cleanup.sh` automates the **_removal of installed packages_** and **_environment clean up_** in order to streamline the distribution export process, including:
+
+File            |Description
+:--------------:|:----------
+`packages.sh`   |**_Packages_** and **_dependencies_** removal
+`ros.sh`        |**_[ROS environment](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)_** uninstallation
+`wsl.sh`        |**_WSL-specific_** settings with default user removed, configured in `/etc/wsl.conf`
+
 ## Applying Configuration
+
+### Reb
 
 1.  **Clone the repository:**
 
@@ -42,7 +62,7 @@ File            |Description
 2.  **Apply the settings:**
 
     ```bash
-    bash /etc/ubuntu/.dotfiles/installation.sh
+    bash /etc/ubuntu/.dotfiles/setup.sh
     ```
 
 ## Collaboration
