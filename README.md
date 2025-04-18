@@ -51,12 +51,12 @@ File            |Description
 
 ## Applying Configuration
 
-### Reb
+### Rebuild the Existing Image
 
 1.  **Clone the repository:**
 
     ```bash
-    git clone https://github.com/khangvum/ubuntu-22.04-ros-wsl.git /etc/ubuntu/.dotfiles
+    sudo git clone https://github.com/khangvum/ubuntu-22.04-ros-wsl.git /etc/ubuntu/.dotfiles
     ```
 
 2.  **Apply the settings:**
@@ -64,6 +64,10 @@ File            |Description
     ```bash
     bash /etc/ubuntu/.dotfiles/setup.sh
     ```
+
+### Install a Fresh Distribution
+
+Under development
 
 ## Collaboration
 
