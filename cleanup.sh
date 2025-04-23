@@ -19,7 +19,7 @@ rm /etc/ubuntu/.dotfiles/README.md
 # Remove any user profile in the /home directory
 for dir in /home/*; do
     if [ -d "$dir" ]; then
-        echo -e "\e[33mRemoving /home/$package\e[0m"
+        echo -e "\e[33mRemoving $dir\e[0m"
         rm -rf "$dir"
     fi
 done
