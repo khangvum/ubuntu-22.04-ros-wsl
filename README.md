@@ -15,20 +15,13 @@ A **_Robot Operating System_** (**_ROS_**) **_environment_** tailored for runnin
 └── etc
     └── ubuntu
         └── .dotfiles
-            ├── cleanup
-            │   ├── ros.sh
-            │   ├── packages.sh
-            │   └── wsl.sh
             ├── setup
             │   ├── aliases.sh
             │   ├── ros.sh
             │   ├── packages.sh
             │   └── wsl.sh
-            ├── cleanup.sh
             └── setup.sh
 ```
-
-### setup
 
 `setup.sh` automates the **_dependency installation_** and **_environment set up_** process, including:
 
@@ -38,16 +31,6 @@ File            |Description
 `packages.sh`   |**_Packages_** and **_dependencies_** installation
 `ros.sh`        |**_[ROS environment](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)_** configuration
 `wsl.sh`        |**_WSL-specific_** settings, configured in `/etc/wsl.conf`
-
-### cleanup
-
-`cleanup.sh` automates the **_removal of installed packages_** and **_environment clean up_** in order to streamline the distribution export process, including:
-
-File            |Description
-:--------------:|:----------
-`packages.sh`   |**_Packages_** and **_dependencies_** removal
-`ros.sh`        |**_[ROS environment](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)_** uninstallation
-`wsl.sh`        |**_WSL-specific_** settings with default user removed, configured in `/etc/wsl.conf`
 
 ## Applying Configuration
 
@@ -81,5 +64,5 @@ File            |Description
 
 This project is a collaboration between:
 
--   **Ton Nu Thanh Thao**: [GitHub](https://github.com/thaoton1910) | [LinkedIn](https://www.linkedin.com/in/ton-nu-thanh-thao/) | [Gmail](mailto:thaoton1910@gmail.com)
--   **Khang Vu**: [GitHub](https://github.com/khangvum) | [LinkedIn](https://www.linkedin.com/in/khangvum/) | [Gmail](mailto:manhkhang0305@gmail.com)
+-   **Ton Nu Thanh Thao:** [GitHub](https://github.com/thaoton1910) | [LinkedIn](https://www.linkedin.com/in/ton-nu-thanh-thao/) | [Gmail](mailto:thaoton1910@gmail.com)
+-   **Khang Vu:** [GitHub](https://github.com/khangvum) | [LinkedIn](https://www.linkedin.com/in/khangvum/) | [Gmail](mailto:manhkhang0305@gmail.com)
