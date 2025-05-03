@@ -67,7 +67,15 @@ File            |Description
 
 ### Install a Fresh Distribution
 
-Under development
+1.  **Download the latest version of the distribution:** [ubuntu-22.04-ros.wsl](https://drive.google.com/uc?export=download&id=1Nfuck2Z0pC7jehWL81haJxUhOtBsQu6x)
+
+2.  **Install the distribution by double-clicking the file**
+
+3.  **Launch the distribution and apply the settings:**
+
+    ```bash
+    bash /etc/ubuntu/.dotfiles/setup.sh
+    ```
 
 ## Collaboration
 
