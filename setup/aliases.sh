@@ -2,7 +2,7 @@
 
 # Change the default directory to user's home directory
 if ! grep -Fxq "cd ~" ~/.bashrc; then
-    cat << EOF >> ~/.bashrc
+    cat << 'EOF' >> ~/.bashrc
 
 # Change the default directory to user's home directory
 cd ~
@@ -10,7 +10,7 @@ EOF
 fi
 
 # Add aliases
-cat << EOF > ~/.bash_aliases
+cat << 'EOF' > ~/.bash_aliases
 # Aliases
 # - ~/.dotfiles
 alias .dotfiles='cd /etc/ubuntu/.dotfiles'
@@ -36,6 +36,9 @@ alias reboot='sudo reboot'
 alias poweroff='sudo poweroff'
 alias halt='sudo halt'
 alias shutdown='sudo shutdown'
+
+# - ssh
+alias 'ssha'='eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rsa'
 
 # - update (in one command)
 alias update='sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt clean -y && sudo apt autoclean -y'
