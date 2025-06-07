@@ -32,4 +32,7 @@ else
 
     # 4. Environment setup: Sourcing the setup script
     source /opt/ros/humble/setup.bash
+
+    # 5. Install Colcon
+    sudo apt install -y python3-colcon-common-extensions
 fi
