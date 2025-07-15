@@ -35,4 +35,7 @@ else
 
     # 5. Install Colcon
     sudo apt install -y python3-colcon-common-extensions
+
+    # 6. Install Navigation2
+    sudo apt install -y ros-humble-navigation2 ros-humble-nav2-bringup
 fi
