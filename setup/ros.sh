@@ -38,4 +38,13 @@ else
 
     # 6. Install Navigation2
     sudo apt install -y ros-humble-navigation2 ros-humble-nav2-bringup
+
+    # 7. Install Cartographer
+    sudo apt install -y ros-humble-cartographer ros-humble-cartographer-ros
+
+    # 8. Install xacro
+    sudo apt install -y ros-humble-xacro
+
+    # 9. Install Gazebo
+    sudo apt install -y ros-humble-gazebo-ros-pkgs ros-humble-gazebo-ros2-control
 fi
