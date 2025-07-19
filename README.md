@@ -32,6 +32,20 @@ File            |Description
 `ros.sh`        |**_[ROS environment](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)_** configuration
 `wsl.sh`        |**_WSL-specific_** settings, configured in `/etc/wsl.conf`
 
+## Prerequisites
+
+1.  **_Windows Subsystem for Linux_** feature enabled:
+
+    ```powershell
+    DISM.exe /Online /Enable-Feature /FeatureName:Microsoft-Windows-Subsystem-Linux /All /NoRestart
+    ```
+
+2.  Update **_WSL_** to the **_latest version_**:
+
+    ```powershell
+    wsl --update
+    ```
+
 ## Applying Configuration
 
 ### Rebuild the Existing Image
@@ -49,6 +63,9 @@ File            |Description
     ```
 
 ### Install a Fresh Distribution
+
+>   [!NOTE]
+>   This method only applies to WSL version **_2.4.4 and higher_**
 
 1.  **Download the latest version of the distribution:** [ubuntu-22.04-ros-v1.0.1.wsl](https://github.com/khangvum/ubuntu-22.04-ros-wsl/releases/download/v1.0.1/ubuntu-22.04-ros-v1.0.1.wsl)
 
