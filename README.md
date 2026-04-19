@@ -67,7 +67,7 @@ A **_Robot Operating System_** (**_ROS_**) **_environment_** tailored for runnin
 > [!IMPORTANT]
 > This method only applies to WSL version **_2.4.4 and higher_**
 
-1.  **Download the latest version of the distribution:** [ubuntu-22.04-ros-v1.0.1.wsl](https://github.com/khangvum/ubuntu-22.04-ros-wsl/releases/download/v1.0.1/ubuntu-22.04-ros-v1.0.1.wsl)
+1.  **Download the latest version of the distribution:** [ubuntu-22.04-ros-v1.0.2.wsl](https://github.com/khangvum/ubuntu-22.04-ros-wsl/releases/download/v1.0.2/ubuntu-22.04-ros-v1.0.2.wsl)
 
 2.  **Install the distribution by double-clicking the file**
 
