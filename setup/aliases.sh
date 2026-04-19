@@ -1,13 +1,13 @@
 #!/bin/bash
 
-# Change the default directory to user's home directory
-if ! grep -Fxq "cd ~" ~/.bashrc; then
-    cat << 'EOF' >> ~/.bashrc
+# # Change the default directory to user's home directory
+# if ! grep -Fxq "cd ~" ~/.bashrc; then
+#     cat << 'EOF' >> ~/.bashrc
 
-# Change the default directory to user's home directory
-cd ~
-EOF
-fi
+# # Change the default directory to user's home directory
+# cd ~
+# EOF
+# fi
 
 # Add aliases
 cat << 'EOF' > ~/.bash_aliases
