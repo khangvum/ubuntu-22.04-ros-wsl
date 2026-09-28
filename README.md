@@ -2,6 +2,8 @@
 
 A **_Robot Operating System_** (**_ROS_**) **_environment_** tailored for running on **_Ubuntu 22.04_** within **_Windows Subsystem for Linux_** (**_WSL_**). This setup promotes **_seamless integration_** between **_Windows_** and **_Ubuntu_**, allowing **_ROS_** to operate without the need of a traditional virtual machine (VM).
 
+[![Security Scan](https://github.com/khangvum/ubuntu-22.04-ros-wsl/actions/workflows/security.yml/badge.svg)](https://github.com/khangvum/ubuntu-22.04-ros-wsl/actions/workflows/security.yml)
+
 ## Features
 
 - Seamless **_Windows interoperability_**, minimizing the overhead of a traditional virtual machine.
