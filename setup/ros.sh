@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 # Check if ROS 2 is already installed
 if dpkg -l | grep -q ros-humble; then
     echo -e "\e[32mROS 2 is already installed\e[0m"

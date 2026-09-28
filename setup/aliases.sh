@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 # # Change the default directory to user's home directory
 # if ! grep -Fxq "cd ~" ~/.bashrc; then
 #     cat << 'EOF' >> ~/.bashrc
@@ -21,7 +23,7 @@ alias ...='cd ../../../'
 alias ....='cd ../../../../'
 alias .....='cd ../../../../'
 alias .4='cd ../../../../'
-alias .5='cd ../../../../..'
+alias .5='cd ../../../../..'Bas
 
 # - clear
 alias c='clear'

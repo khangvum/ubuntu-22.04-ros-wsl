@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 install_package() {
     local package=$1
     local install=$2
