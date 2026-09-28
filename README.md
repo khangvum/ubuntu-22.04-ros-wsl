@@ -2,6 +2,8 @@
 
 A **_Robot Operating System_** (**_ROS_**) **_environment_** tailored for running on **_Ubuntu 22.04_** within **_Windows Subsystem for Linux_** (**_WSL_**). This setup promotes **_seamless integration_** between **_Windows_** and **_Ubuntu_**, allowing **_ROS_** to operate without the need of a traditional virtual machine (VM).
 
+[![Security Scan](https://github.com/khangvum/ubuntu-22.04-ros-wsl/actions/workflows/security.yml/badge.svg)](https://github.com/khangvum/ubuntu-22.04-ros-wsl/actions/workflows/security.yml)
+
 ## Features
 
 - Seamless **_Windows interoperability_**, minimizing the overhead of a traditional virtual machine.
@@ -17,6 +19,7 @@ A **_Robot Operating System_** (**_ROS_**) **_environment_** tailored for runnin
         └── .dotfiles
             ├── setup
             │   ├── aliases.sh
+            │   ├── git.sh
             │   ├── ros.sh
             │   ├── packages.sh
             │   └── wsl.sh
@@ -28,6 +31,7 @@ A **_Robot Operating System_** (**_ROS_**) **_environment_** tailored for runnin
 |     File      | Description                                                                                                 |
 | :-----------: | :---------------------------------------------------------------------------------------------------------- |
 | `aliases.sh`  | Shell **_aliases_**                                                                                         |
+|   `git.sh`    | **_Git_** settings                                                                                          |
 | `packages.sh` | **_Packages_** and **_dependencies_** installation                                                          |
 |   `ros.sh`    | **_[ROS environment](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)_** configuration |
 |   `wsl.sh`    | **_WSL-specific_** settings, configured in `/etc/wsl.conf`                                                  |
