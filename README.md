@@ -19,6 +19,7 @@ A **_Robot Operating System_** (**_ROS_**) **_environment_** tailored for runnin
         └── .dotfiles
             ├── setup
             │   ├── aliases.sh
+            │   ├── git.sh
             │   ├── ros.sh
             │   ├── packages.sh
             │   └── wsl.sh
@@ -30,6 +31,7 @@ A **_Robot Operating System_** (**_ROS_**) **_environment_** tailored for runnin
 |     File      | Description                                                                                                 |
 | :-----------: | :---------------------------------------------------------------------------------------------------------- |
 | `aliases.sh`  | Shell **_aliases_**                                                                                         |
+|   `git.sh`    | **_Git_** settings                                                                                          |
 | `packages.sh` | **_Packages_** and **_dependencies_** installation                                                          |
 |   `ros.sh`    | **_[ROS environment](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)_** configuration |
 |   `wsl.sh`    | **_WSL-specific_** settings, configured in `/etc/wsl.conf`                                                  |
