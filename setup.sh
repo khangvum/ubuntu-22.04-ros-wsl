@@ -10,6 +10,8 @@ sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo
 # Run the setup scripts
 # - Add aliases
 bash $SETUP_PATH/aliases.sh
+# - Add Git configuration
+bash $SETUP_PATH/git.sh
 # - Install the packages and dependencies
 bash $SETUP_PATH/packages.sh
 # - Install ROS 2
