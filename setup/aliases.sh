@@ -1,5 +1,9 @@
 #!/bin/bash
 
+set -e
+
+echo -e "\e[33mConfiguring shell aliases...\e[0m"
+
 # # Change the default directory to user's home directory
 # if ! grep -Fxq "cd ~" ~/.bashrc; then
 #     cat << 'EOF' >> ~/.bashrc
@@ -43,3 +47,5 @@ alias 'ssha'='eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rsa'
 # - update (in one command)
 alias update='sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt clean -y && sudo apt autoclean -y'
 EOF
+
+echo -e "\e[32mShell aliases configured successfully!\e[0m"

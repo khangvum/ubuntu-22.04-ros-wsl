@@ -1,0 +1,16 @@
+name: Security Scan
+
+on:
+  push: # Trigger on pushes to any branch
+  pull_request:
+    branches: 
+      - main
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  gitleaks-scan:
+    uses: khangvum-com/.github/.github/workflows/gitleaks.yml@main
+    secrets: inherit

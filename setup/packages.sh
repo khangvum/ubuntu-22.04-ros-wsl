@@ -1,5 +1,9 @@
 #!/bin/bash
 
+set -e
+
+echo -e "\e[33mInstalling packages and dependencies...\e[0m"
+
 install_package() {
     local package=$1
     local install=$2
@@ -10,6 +14,7 @@ install_package() {
     else
         echo -e "\e[33mInstalling $package\e[0m"
         eval "$install"
+        echo -e "\e[32m$package installed successfully\e[0m"
     fi
 }
 
@@ -32,6 +37,10 @@ else
     echo -e "\e[33mInstalling Docker\e[0m"
     sudo snap install docker
     # Manage Docker as a non-root user
+    echo -e "\e[33mConfiguring Docker for the current user...\e[0m"
     sudo groupadd docker
     sudo usermod -aG docker $USER
+    echo -e "\e[32mDocker installed successfully\e[0m"
 fi
+
+echo -e "\e[32mPackage installation completed successfully!\e[0m"
